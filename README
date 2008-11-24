@@ -1,0 +1,25 @@
+HostsAccess
+===========
+
+  Rails plugin that controls host access like hosts.allow
+
+
+Usage
+=====
+  config/environment.rb:
+
+    # specify hosts to allow access
+    HostsAccess.allow = ['127.0.0.1', 'ac.wota.jp']
+
+    # allow_controller means non-acl controllers
+    HostsAccess.allow_controller = ['account', 'stats_report']
+
+Note
+====
+
+  All accesses are allowed if no rules are given
+
+
+
+Copyright (c) 2008 maiha@wota.jp, released under the MIT license
+
