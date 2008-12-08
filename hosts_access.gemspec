@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "hosts_access"
-  s.version = "0.1"
-  s.date = "2008-11-25"
+  s.version = "0.2"
+  s.date = "2008-12-09"
   s.summary = ""
   s.email = "maiha@wota.jp"
   s.homepage = "http://github.com/maiha/hosts_access"

@@ -1,4 +1,1 @@
-
-ActionController::Base.class_eval do
-  include HostsAccess
-end
+require File.dirname(__FILE__) + '/lib/hosts_access'
