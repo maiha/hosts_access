@@ -7,7 +7,7 @@ unless Module.respond_to?(:mattr_accessor)
 end
 
 unless [].respond_to?(:extract_options!)
-  require File.dirname(__FILE__) + '/../core_ext/array/extract_options'      
+  require File.dirname(__FILE__) + '/../core_ext/array/extract_options'
   class Array #:nodoc:
     include ActiveSupport::CoreExtensions::Array::ExtractOptions
   end
@@ -50,6 +50,7 @@ module HostsAccess
 
     def hosts_access_denied(reason)
       logger.info "[HostsAccess] NG: #{reason}"
+      render :text=>"Access denied", :status => :unauthorized
       return false
     end
 end
