@@ -1,7 +1,7 @@
 HostsAccess
 ===========
 
-  Rails plugin that controls host access like hosts.allow
+  Rails / Merb plugin that controls host access like hosts.allow
 
 
 Usage
